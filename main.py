@@ -210,7 +210,7 @@ def visualizar_grafo(G, caminho_otimo):
     # Destaca o caminho encontrado
     if caminho_otimo:
         arestas_caminho = [(caminho_otimo[i], caminho_otimo[i+1]) for i in range(len(caminho_otimo)-1)]
-        nx.draw_networkx_edges(G, pos, edgelist=arestas_caminho, edge_color='#27AE60', width=5.0)
+        nx.draw_networkx_edges(G, pos, edgelist=arestas_caminho, edge_color='#27AE60', width=2.0)
 
         # Destaca Origem e Destino
         nx.draw_networkx_nodes(G, pos, nodelist=[caminho_otimo[0]], node_color='#3498DB', node_size=3500)
@@ -223,7 +223,7 @@ def visualizar_grafo(G, caminho_otimo):
         mpatches.Patch(color='#2ECC71', label='Caminho ótimo (A*)'),
         mpatches.Patch(color='#ECF0F1', label='Outros bairros'),
     ]
-    plt.legend(handles=legenda, loc='upper right', fontsize=9, framealpha=0.9, title='Legenda')
+    plt.legend(handles=legenda, loc='lower right', fontsize=9, framealpha=0.9, title='Legenda')
  
     plt.axis('off')
     plt.tight_layout()
