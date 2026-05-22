@@ -23,6 +23,9 @@ Implementação do algoritmo A\* (A-Star) para roteamento inteligente em São Lu
 ## Descrição do Problema
 Encontrar o caminho mais curto de qualquer bairro de São Luís até a UFMA (Campus Bacanga).
 
+## Link do Vídeo 
+https://youtu.be/cvwQpeH3yCY?si=VrMeOVhXC9DH_cbw
+
 ### Modelagem como grafo
 | Elemento do grafo | Representação no problema |
 |---|---|
